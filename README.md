@@ -81,6 +81,10 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+  - The key feature of react is the virtual dom. React pulls data from and edits individual nodes in the virtual dom, without having to rebuild the dom after every new state. 
 1. Describe component state.
+  - Simply data that is kept track of on a component. An initial state is declared on mount, then a new state can be declared, allowing our component to be dynamic.
 1. Describe props.
+  - Props are variables or data passed between components. Any size of a data object can be declared as a prop, giving us more control of our data and keeping it organized.
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+  - Side effects are functions that run when the virtual dom reconciles with the dom. You can sync effects in a React component to the changes by passing in the changing state or prop as the second argument of the side effect function.

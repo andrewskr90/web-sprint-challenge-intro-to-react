@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 // Write your Character component here
 
-export default function Character(props) {
-  const CharBox = styled.div`
+
+const CharBox = styled.div`
     display: flex;
     justify-content: space-between;
     font-size: 1.5vw;
@@ -17,11 +17,17 @@ export default function Character(props) {
     background-color: ${(props) => props.theme.primaryColor};
     color: ${(props) => props.theme.secondaryColor};
   `;
+const ButtonStyles = styled.button`
+    font-size: 120%;
+
+`
+
+export default function Character(props) {
 
   return (
     <CharBox>
       <h2>{props.data.name}</h2>
-      <button onClick={() => props.open(props.index)}>Details</button>
+      <ButtonStyles styles onClick={() => props.open(props.index)}>Details</ButtonStyles>
     </CharBox>
   );
 }
